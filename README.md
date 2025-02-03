@@ -23,9 +23,9 @@ Grouping will be done on day 1, based on participants' skill, interest, and sche
 | Day | Date | Event | Note |
 | --- | ---- | ----- | ---- |
 | 1 | 2025-02-17 | __10:00__-12:00 Opening / Tutorial I <br> 13:00-17:00 Tutorial II|  |
-| 2 | 2025-02-18 | 9:00 - 13:00 Work Session<br>13:00-17:00 Tutorial III ||
-| 3 | 2025-02-19 | 9:00 - 17:00 Work Session |  |
-| 4 | 2025-02-20 | 9:00 - 17:00 Work Session |  |
+| 2 | 2025-02-18 | 9:00-13:00 Work Session<br>13:00-17:00 Tutorial III ||
+| 3 | 2025-02-19 | 9:00-17:00 Work Session |  |
+| 4 | 2025-02-20 | 9:00-17:00 Work Session |  |
 | 5 | 2025-02-21 | 9:00-12:00 Work Session <br> 13:00-15:00 Presentation|  |
 
 ### Notes
