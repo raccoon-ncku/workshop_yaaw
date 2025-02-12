@@ -1,0 +1,32 @@
+services:
+  webui:
+    image: ghcr.io/open-webui/open-webui:main
+    expose:
+     - 8080/tcp
+    ports:
+     - 8080:8080/tcp
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+    volumes:
+      - ./volumes/open-webui:/app/backend/data
+    depends_on:
+     - ollama
+
+  ollama:
+    image: ollama/ollama
+    expose:
+     - 11434/tcp
+    ports:
+     - 11434:11434/tcp
+    healthcheck:
+      test: ollama --version || exit 1
+    command: serve
+    volumes:
+      - ./volumes/ollama:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['all']
+              capabilities: [gpu]
