@@ -1,0 +1,7 @@
+name: yaaw
+dependencies:
+  - python
+  - pip
+  - pip:
+      - python-dotenv
+      - googlemaps
